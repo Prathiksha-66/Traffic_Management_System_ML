@@ -1,9 +1,11 @@
-# Traffic Management System Using Machine Learning
 
-🚦 Traffic Management System Using Machine Learning
+
+**🚦 Traffic Management System Using Machine Learning**
+
 A machine-learning-based traffic prediction system that predicts the number of vehicles at a road junction using historical traffic patterns. The system uses Random Forest Regression along with time-based and historical traffic features to estimate traffic volume and classify the predicted traffic condition as Low, Medium, or High.
 
-📌 Project Overview
+**📌 Project Overview**
+
 Traffic congestion is a common problem in urban areas. Predicting traffic volume in advance can help traffic-management authorities make better decisions regarding signal timing and junction prioritization.
 
 This project analyzes historical traffic data and uses a Random Forest Regressor to predict the expected number of vehicles at a junction.
@@ -16,7 +18,8 @@ High Traffic
 
 A rule-based recommendation layer provides a corresponding traffic-management suggestion.
 
-🎯 Objectives
+**🎯 Objectives**
+
 Predict the number of vehicles at a junction.
 Analyze traffic patterns according to time and junction.
 Use historical traffic information for prediction.
@@ -24,7 +27,8 @@ Classify predicted traffic into Low, Medium, and High levels.
 Provide simple traffic-management recommendations.
 Develop an interactive interface for entering traffic information and viewing predictions.
 
-📊 Dataset
+**📊 Dataset**
+
 The project uses the Traffic Prediction Dataset by fedesoriano from Kaggle.
 Dataset Features
 Feature	Description
@@ -38,7 +42,8 @@ The dataset contains 48,120 records from four junctions.
 Kaggle Dataset
 Traffic Prediction Dataset – Kaggle
 
-🧠 Machine Learning Approach
+**🧠 Machine Learning Approach**
+
 The project uses Random Forest Regression to predict traffic volume.
 Target Variable
 Vehicles
@@ -72,7 +77,8 @@ Lag_24 — traffic from approximately the same hour on the previous day
 Rolling_Mean_3 — average traffic from the previous three observations
 These features help the model learn recent and historical traffic patterns.
 
-🔄 Project Workflow
+**🔄 Project Workflow**
+
 Kaggle Traffic Dataset
         ↓
 Data Loading
@@ -99,7 +105,8 @@ Traffic Management Recommendation
         ↓
 Web Interface
 
-📈 Exploratory Data Analysis
+**📈 Exploratory Data Analysis**
+
 The project analyzes traffic patterns based on:
 Junction
 Hour of the day
@@ -111,7 +118,8 @@ Traffic volume varies significantly throughout the day.
 The busiest average hour in the analyzed dataset was around 7 PM.
 Traffic volume is generally higher on weekdays than on weekends.
 
-🤖 Model
+**🤖 Model**
+
 Algorithm
 Random Forest Regressor
 Random Forest was selected because it can model nonlinear relationships between traffic-related features and vehicle volume and works well with structured/tabular data.
@@ -121,7 +129,8 @@ Algorithm: Random Forest Regressor
 Number of Trees: 100
 Random State: 42
 
-📊 Model Performance
+**📊 Model Performance**
+
 The trained model achieved the following results on the test data:
 Metric	Result
 MAE	2.4059
@@ -134,7 +143,8 @@ R² = 0.968 indicates that the model explains approximately 96.8% of the variati
 
 Note: The R² score should not be described as "96.8% accuracy." R² and classification accuracy are different metrics.
 
-🔍 Feature Importance
+**🔍 Feature Importance**
+
 The Random Forest model identified the following feature importance:
 Feature	Importance
 Lag_1	0.940651
@@ -149,7 +159,8 @@ Year	0.000997
 
 Lag_1 is the most influential feature, showing that recent traffic volume is strongly associated with the predicted traffic volume.
 
-🚦 Traffic Classification
+**🚦 Traffic Classification**
+
 The predicted vehicle count is converted into traffic categories using thresholds derived from the traffic-volume distribution.
 
 Predicted Vehicles
@@ -159,7 +170,8 @@ Predicted Vehicles
  ┌──────┼──────┐
  ↓      ↓      ↓
 Low   Medium   High
-🚥 Traffic Management Recommendation
+
+**🚥 Traffic Management Recommendation**
 
 A rule-based layer converts the traffic level into a simple recommendation.
 
@@ -176,7 +188,8 @@ High Traffic
 
 The traffic recommendation layer is rule-based logic, while the traffic-volume prediction itself is performed using Machine Learning.
 
-💻 Technologies Used
+**💻 Technologies Used**
+
 Programming Language
 Python
 Machine Learning
@@ -195,7 +208,9 @@ Web Framework
 Flask
 Development Environment
 Google Colab
-📁 Project Structure
+
+**📁 Project Structure**
+
 Traffic-Management-System/
 │
 ├── index.html
@@ -207,7 +222,8 @@ Traffic-Management-System/
 
 The exact files may vary depending on how the project is organized in the GitHub repository.
 
-▶️ How to Run
+**▶️ How to Run**
+
 1. Clone the repository
 git clone https://github.com/Prathiksha-66/Traffic-Management-System.git
 2. Install dependencies
@@ -219,7 +235,8 @@ python app.py
 Open the local URL shown by Flask, usually:
 http://127.0.0.1:5000
 
-🖥️ Application Output
+**🖥️ Application Output**
+
 The web interface allows users to enter traffic-related information such as:
 Junction
 Hour
@@ -236,7 +253,8 @@ Predicted Vehicle Count
 Traffic Level
 Traffic Management Recommendation
 
-🚀 Future Enhancements
+**🚀 Future Enhancements**
+
 Connect the frontend directly to the trained Random Forest model through Flask.
 Add real-time traffic data using sensors or APIs.
 Integrate CCTV-based vehicle detection using YOLO/OpenCV.
@@ -246,11 +264,13 @@ Deploy the application to a cloud platform.
 Compare Random Forest with XGBoost, Gradient Boosting, and LSTM models.
 Use chronological time-series validation for more realistic future forecasting.
 
-👩‍💻 Author
+**👩‍💻 Author**
+
 Prathiksha Acharya
 Computer Science and Engineering Student
 
 GitHub: Prathiksha-66
 
-📄 License
+**📄 License**
+
 This project is developed for educational and academic purposes.
